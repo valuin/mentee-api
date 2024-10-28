@@ -10,7 +10,7 @@ async function createUser() {
     const nim = prompt("Enter your nim: ");
     console.log(nim);
 
-    const response = await axios.post("http://localhost:3000/create-users", {
+    const response = await axios.post("http://localhost:3000/users", {
       name: name,
       nim: nim,
     });
